@@ -50,7 +50,7 @@ exports.orderHandler = (req, res) => {
 			console.log('sent to iterable' + newObj);  //for debug purposes and data validation only 
 				
 			if(response && response.statusCode == 200) {
-			res.status(200).send(JSON.stringify({"status" :"success"}));  //gratification logging keeep this on in prod. pew pew gold start of success
+			res.status(200).send(JSON.stringify({"status" :"success"}));  //gratification logging keeep this on in prod. pew pew gold star of success
 			}
 			else {
 			    res.status(500).send(JSON.stringify({"status" :"failed" , "message" : body}));
